@@ -17,7 +17,7 @@ public class SubActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.button1:
-                text1.setText("hello");
+                text1.setText("hihi");
                 break;
             case R.id.button2:
                 text1.setText("world");
