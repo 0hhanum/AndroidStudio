@@ -82,15 +82,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
-        setContentView(R.layout.sep_28_lecture);
+        setContentView(R.layout.main_activity);
     }
-
-    public void onButtonClick(View view){
-        TextView result = (TextView) findViewById(R.id.result);
-        RadioButton button1 = (RadioButton) findViewById(R.id.radio1);
-        RadioButton button2 = (RadioButton) findViewById(R.id.radio2);
-
-        if(button1.isChecked()) result.setText("아이폰입니다.");
-        if(button2.isChecked()) result.setText("갤럭시입니다.");
-    }햣
+    public void onClickTest(View view){
+    TextView text = findViewById(R.id.text1);
+    switch (view.getId()){
+        case R.id.button1:
+            text.setText("A");
+            break;
+        case R.id.button2:
+            text.setText("B");
+            break;
+    }
+    }
 }
