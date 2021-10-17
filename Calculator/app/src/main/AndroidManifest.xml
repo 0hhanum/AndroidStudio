@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculator" >
         <activity
-            android:name=".CH3"
+            android:name=".CH4_1"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
